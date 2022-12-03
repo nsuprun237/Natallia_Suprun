@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(175, 242, 242);        
+    }    
+    .navigation{
+        width: 15em;
+        background-color: beige;
+    }
+    .content{
+        background-color: antiquewhite;
+        margin-bottom: .2em; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;        
+    }
+    .img{
+        width: 100px;
+        height: 100px;             
+    }    
+    .footer{
+        background-color: rgb(117, 177, 157);
+    }
+    
+    
+</style>
+<body>
+    <div class="wrap">
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагаться слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>                
+            </ul>
+        </div>
+        <div class="wrap2">
+        <div class="content">
+            <h3>Статья 1</h3>
+            <p>Размер блока: <br>
+            Занимает всю доступную ширину <br>
+            Должен присутствовать цвет фона <br>
+            Во всех статьях сделайте отступ от соседей равным .2em, при помощи свойства margin-bottom</p>
+        </div>        
+        <div class="content">
+            <h3>Статья 2</h3>
+            <p>Размер блока: <br>
+            Занимает всю доступную ширину <br>
+            Должен присутствовать цвет фона <br>
+            Во всех статьях сделайте отступ от соседей равным .2em, при помощи свойства margin-
+            bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю 
+            внутри данной ствтьи для данной каотинки.</p>  
+            <img src="../base/36902.png" alt="Символ почты" class="img">
+            
+        </div>              
+        </div>
+           
+    </div>
+    <div class="footer">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом
+    </div>  
+   
+</body>
+</html>

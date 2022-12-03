@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 120px;
+            border: 1px solid;
+            border-radius: 0 20px 0 20px;
+        }
+        p{
+            text-indent: 1.5em;
+        }
+        a[href$='.doc']::before{
+            content: url(../base/img/link.png);
+        }
+        a[href*='Microsoft_Word']::after{
+            content: url(../base/img/word.jpg);
+        }
+        a[href*='Portable_Document_Format']::before{
+            content: url(../base/img/link.png);
+        }
+        a[href$='12021']::after{
+            content: url(../base/img/pdf.png);
+        }
+        a[href*='ZIP']::before{
+            content: url(../base/img/link.png);
+        }
+        a[href*='extract']::after{
+            content: url(../base/img/archive.gif);
+        }
+        ul{
+            list-style-type: none;            
+        }
+        li::before{
+            content: url(../base/img/doc.jpg);
+        }
+        a[href$='create-online-word-document']:hover::after{
+            content: url(../base/img/word.jpg);
+        }
+        a[href$='.pdf']:hover::after{
+            content: url("../base/img/pdf.png");
+        }
+        a[href$='/view']:hover::after{
+            content: url("../base/img/archive.gif");
+        }           
+        
+    </style>
+</head>
+<body>
+    <h2>Форматы файлов.</h2>
+    <div>
+        <p>
+            .DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/.doc">document</a>) - расщирение имени файла, используемое для файлов, представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без формирования, однако позже стало использоваться для форматов с разметкой.<br>
+            <a href="https://ru.wikipedia.org/wiki/Microsoft_Word">Документ MS Word</a>
+        </p>
+    </div>
+    <div>
+        <p>
+            Portable Document Format (<a href="https://ru.wikipedia.org/wiki/Portable_Document_Format">PDF</a>) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript.<br>
+            <a href="https://www.okbhmao.ru/download.php?file=12021">Документ PDF</a>
+        </p>
+    </div>
+    <div>
+        <p>
+            ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/ZIP">zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлеч путем распаковки с помощью специальной программы.<br>
+            <a href="https://extract.me/ru/">Архив</a>
+        </p>
+    </div>
+    <h3>Это список файлов</h3>
+    <ul>
+        <li><a href="https://www.offidocs.com/ru/index.php/create-online-word-document">Документ MS Word</a></li>
+        <li><a href="https://kpfu.ru/docs/F1363895552/Word_2010.pdf">Документ PDF</a></li>
+        <li><a href="https://drive.google.com/file/d/1GcrQxy5y2iPTD1CHrOLj9A2ZhCqi8gEG/view">Архив</a></li>
+    </ul>
+    
+</body>
+</html>
