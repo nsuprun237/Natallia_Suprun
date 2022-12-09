@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 500px;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <h1>Проверка пароля</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" name="password">
+        <fieldset>
+            <input type="password" name="password1" id="password1" required> 
+            <label for="password1"><sup>*</sup>Пароль</label><br> 
+            <input type="password" name="password2" id="password2" required> 
+            <label for="password2"><sup>*</sup>Повторите пароль</label><br><br> 
+            <input type="submit" value="Отправить">            
+        </fieldset>
+    </form>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){                
+                $('input[type=password]').on('input',function(){                  
+                    var pass1 = $("#password1").val();
+                    var pass2 = $("#password2").val();
+                    if (pass1 != pass2){
+                        $('input[type=password]').css('backgroundColor','red')
+                    }else{
+                        $('input[type=password]').css('backgroundColor','green')
+                    }
+                })
+            })
+                
+        </script>
+    
+</body>
+</html>
